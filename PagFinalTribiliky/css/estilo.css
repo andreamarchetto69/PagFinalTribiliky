@@ -1,0 +1,1198 @@
+*{
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family:"fuente1";
+    src: url("../fuente/Sugar\ &\ Vinegar.ttf") format('truetype');
+}
+
+body { 
+	background-color: whitesmoke;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+/* comienza whatsapp */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:10px;
+	right:10px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:20px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+/* termina whatsapp */
+
+h1 { 
+	font-size: 3.5em;
+}
+
+h2 { 
+	font-size: 2.7em;
+}
+
+h3 { 
+	font-size: 2em;
+	margin-top: 20%;
+}
+
+p { 
+	font-size: 1.2em;
+}
+
+.p1 { 
+	font-size: 1.6em;
+}
+
+ul { list-style: none;}
+
+li { font-size: 1.25em;}
+
+.container { 
+	max-width: 1400px;
+	margin: auto;
+}
+
+header { 
+	background-color: rgb(255, 199, 209);
+}
+
+header .container { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header .logo { 
+	margin: 0;
+	padding: 30px 30px;
+	font-weight: bold;
+	color: dodgerblue;
+	font-size: 1.6em;
+}
+
+header nav { 
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 3%;
+	padding-bottom: 25px;
+}
+
+header a { 
+	padding: 5px 20px;
+	margin-bottom: 10%;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-size: 1.2em;
+	border: 3px solid rgb(231, 225, 225) ;
+	box-shadow: 2px 2px 10px rgb(34, 169, 214);
+	cursor: pointer;
+}
+
+header a:hover { 
+	color: dodgerblue;
+}
+
+/*banner-responsive*/
+.banner-responsive {
+	overflow: hidden;
+	padding-bottom: 48.25%;
+	position: relative;
+}
+
+.banner-responsive img {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+/*fin banner-responsive*/
+
+#caracteristicas {
+	display: flex;
+	background-color: antiquewhite;
+	margin: 0;
+}
+
+#caracteristicas .container { 
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding-top: 10%;
+	padding: 100px 10px;
+}
+
+#caracteristicas p { 
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.6em;
+	font-family: "fuente1";
+	color:rgb(196, 22, 57);
+}
+
+.container ul {
+	font-size: .9em;
+	color: black;
+}
+
+#soy-tribi {
+	display: flex;
+	background-color: white;
+	margin: 0;
+}
+
+#soy-tribi .container { 
+	margin: 5%;
+	text-align: center;
+	padding: 70px 10px;
+	font-size: .85em;
+}
+
+#soy-tribi .container h2 { 
+	margin: 5%;
+	text-align: center;
+	font-size: 2em;
+}
+
+#soy-tribi .container p { 
+	margin: 5%;
+	text-align: justify;
+	font-size: 1.3em;
+}
+
+#soy-tribi .container h3 {
+	margin-top: 1%;
+	text-align: center;
+	font-size: 1rem;
+}
+
+#trabajos1 {
+	width: 100%;
+	margin: 0;
+	background-color: rgb(25, 116, 116);
+}
+
+#trabajos1 h2 {
+	margin: 0% 10% 0% 10%;
+	font-size: 2.5em;
+	color: wheat;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	padding-top: 10%;
+	text-align: center;
+}
+
+#trabajos1 .row {
+	width: 100%;
+	margin: 0;
+	padding: 8%;
+	background-color: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+#trabajos1 .row .texto-img h3 {
+	font-size: 1.5em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: rgb(4, 71, 71);
+	background-color: #ffffff;
+	margin: 5%;
+	padding: 5%;
+	text-align: center;
+}
+
+#trabajos1 .row .text-img img {
+	width: 100%;
+}
+
+#trabajos1 .texto-img img {
+	width: 90%;
+	height: 50%;
+	margin: 5%;
+	margin-bottom: 9%;
+	margin-right: 5%;
+	border-radius: 10%;
+}
+
+#trabajos1 .row a {
+	background-color: rgb(4, 71, 71);
+	border: 2px solid wheat;
+	color: wheat;
+	font-weight: bold;
+	padding: 5%;
+	border-radius: 50%;
+	border-top-style: groove ;
+	text-decoration: none;
+}
+
+/* comienza el carousel */
+#galeria { 
+	display: flex;
+	margin: 0;
+	width: 100%;
+	height: 50%;
+}
+
+#galeria .container { 
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	padding: 5%;
+}
+
+#galeria .container h2 { 
+	display:flex;
+	justify-content: center;
+	margin: 6%;
+	color: rgb(133, 1, 1);
+	font-size: 1em;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+}
+
+#galeria .container p { 
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+}
+
+.carousel-inner .d-block { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+/* fin del carousel */
+
+
+/* galeria2 */
+#galeria2 { 
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin: 0;
+}
+
+#galeria2 .container { 
+	display: flex;
+	width: 90%;
+	margin: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#galeria2 .texto h2 { 
+	text-align: center;
+	font-size: 2em;
+	font-style: oblique;
+	color: rgb(32, 25, 25);
+	margin: 3%;
+}
+
+#galeria2 .texto p { 
+	text-align: justify;
+	font-size: 1em;
+	font-style: oblique;
+	font-family:Verdana, Geneva, Ttahoma, sans-serif;
+	color: rgb(15, 15, 15);
+	margin: 5%;
+}
+
+#galeria2 .col-sm-12 { 
+	margin: 0;
+	padding: 35px;
+}
+
+.row img { 
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	flex-direction: column;
+	width: 100%;
+	height: 330px;
+}
+
+#galeria2 img:hover { 
+	border: 15px solid rgb(231, 225, 225);
+	box-shadow: 13px 13px 12px rgb(34, 169, 214);
+	cursor: pointer;
+}
+/* fin de la galeria2 */
+
+/* comienza informacion */
+#informacion { 
+	width: 100%;
+	margin: 0;
+	padding: 5%;
+	padding-top: 8%;
+	padding-bottom: 5%;
+	background-color:rgb(240, 223, 194);
+	color: rgb(31, 24, 24);
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+#informacion .container-fluid { 
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+#informacion h5 { 
+	color: rgb(121, 38, 38);
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 5%;
+}
+
+#informacion .card { 
+	width: 100%;
+	margin: 0;
+	padding: 10%;
+	margin-bottom: 5%;
+	background-image: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+#informacion .card-text { 
+	padding-top: 1.5%;
+	margin: 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+#informacion .card-text:hover { 
+	color: #014e1d;
+	cursor: pointer;
+}
+
+#informacion .textoss { 
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	font-size: 1.2em;
+	overflow: hidden;
+}
+
+#informacion .textoss:hover { 
+	color: palevioletred;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#informacion .card { 
+	width: 100%;
+	margin: 0;
+	margin-bottom: 10%;
+}
+/* fin de informacion *
+
+
+/* mapa */
+#ubicacion { 
+	width: 100%;
+	padding: 10%;
+	margin: 0;
+	background-color: rgb(134, 177, 92);
+}
+
+#ubicacion h2 { 
+	color: black;
+	font-size: 1.5em;
+	margin: 5%;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+#ubicacion .container p { 
+	color: white;
+	font-size: 1.3em;
+	margin: 5%;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.mapa { 
+	width: 100%;
+	height: 350px;
+}
+/* fin de mapa */
+
+
+/* contacto */
+#contacto { 
+	width: 100%;
+	padding: 5%;
+	padding-bottom: 10%;
+	margin: 0;
+	background-color: rgb(177, 137, 92);
+}
+
+#contacto h2 { 
+	color: black;
+	font-size: 2em;
+	margin: 5%;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+#contacto .container p { 
+	color: white;
+	font-size: 1.8em;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.form { 
+	width: 100%;
+	height: 450px;
+}
+/* fin contacto */
+
+
+/* footer */
+#footer { 
+	width: 100%;
+	margin: 0;
+	padding: 8%;
+    background-color: #310f0f;
+}
+
+#footer .container-fluid { 
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#footer .cards { 
+	width: 100%;
+	color: white;
+	font-size: 0.9em;
+	padding: 2%;
+	margin-bottom: 2%;
+}
+
+#footer .card-body a { 
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#footer a { 
+	padding: 2% 7%;
+	font-size: 1rem;
+	cursor: pointer;
+}
+/* fin del footer */
+
+
+
+/*-------------------- empieza @media --------------------------*/
+ 
+/* mobiles pequeños */
+@media (min-width: 320px) and (max-width: 425px) {
+	header .logo{ 
+		padding: 30px 10px;
+		font-size: 1.4em;
+	}
+
+	header a{ 
+		padding: 5px 20px;
+		margin-bottom: 5%;
+		font-size: 1em;
+	}
+	
+	#caracteristicas .container{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	#caracteristicas p{
+		width: 100%;
+		font-size: 1.4em;
+		padding-top: 15%;
+	}
+
+	.container ul{
+		padding: 10%;
+		font-size: .7em;
+		color: black;
+	}
+	
+	#soy-tribi .container{
+		width: 100%;
+		margin: 0;
+		padding: 10%;
+	}
+	
+	#soy-tribi .container h2{
+		font-size: 1.5em;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		text-align: center;	
+	}
+	
+	#soy-tribi .container p{
+		font-size: 1.1em;
+		text-align: center;
+		font-weight: none;
+	}
+
+	#trabajos1{
+		width: 100%;
+		margin: 0;
+		padding: 5%;
+	}
+
+	#trabajos1 h2{
+		font-size: .8em;
+		text-align: center;
+	}
+	
+	#trabajos1 .row .texto-img h3{
+		font-size: 1.1em;
+		text-align: center;
+	}
+	
+	#trabajos1 .row a{
+		margin-top: 10%;
+		font-size: .8em;
+		padding: 4%;
+	}
+
+	#galeria .container{ 
+		padding-bottom: 10%;
+	}
+
+	#galeria2 .texto h2{
+		font-size: 1.5em;
+	}
+
+	.row img{ 
+		width: 100%;
+		height: 210px;
+	}
+
+	#informacion .card-text{ 
+		font-size: 1.2em;
+		overflow: hidden;
+	}
+	
+	#informacion .textoss{ 
+		font-size: .9em;
+		overflow: hidden;
+	}
+
+	#ubicacion h2{ 
+		font-size: 1.2em;
+	}
+	
+	#ubicacion .container p{ 
+		font-size: 1.1em;
+	}
+
+	#contacto h2{ 
+		font-size: 1.3em;
+	}
+	
+	#contacto .container p{ 
+		font-size: 1em;
+	}
+	
+	#footer .cards{ 
+		font-size: 0.7em;
+	}
+	
+	#footer .card-body a{ 
+		font-size: 30px;
+	}
+	
+	a{
+		font-size: 1rem;
+	}
+}
+
+
+
+@media (min-width: 426px) and (max-width: 575.98px) {
+	#caracteristicas p{
+		width: 100%;
+		font-size: 1.1em;
+	}
+
+	#soy-tribi .container h2{
+		font-size: 1.4em;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		text-align: center;	
+	}
+	
+	#soy-tribi .container p{
+		font-size: 1.1em;
+		text-align: center;
+		font-weight: none;
+	}
+
+	#trabajos1 h2{
+		font-size: 1em;
+		text-align: center;
+	}
+
+	#trabajos1 .row a{
+		font-size: .95em;
+		padding: 6%;
+	}
+
+	#galeria .container{ 
+		padding-bottom: 10%;
+	}
+
+	#galeria2 .texto h2{
+		font-size: 1.4em;
+	}
+
+	.row img{ 
+		width: 95%;
+		height: 200px;
+	}
+
+	#informacion .card-text{ 
+		font-size: 1.1em;
+		overflow: hidden;
+	}
+	
+	#informacion .textoss{ 
+		font-size: .85em;
+		overflow: hidden;
+	}
+	
+	#ubicacion h2{
+		font-size: 1.15em;
+	}
+
+	#ubicacion .container p{ 
+		font-size: 1.1em;
+	}
+
+	#contacto h2{ 
+		font-size: 1.3em;
+	}
+	
+	#contacto .container p{ 
+		font-size: 1em;
+	}
+	
+	#footer .cards{ 
+		font-size: 0.7em;
+	}
+	
+	#footer .card-body a{ 
+		font-size: 30px;
+	}
+	
+	a{
+		font-size: 1rem;
+	}
+
+	@media (max-width: 575.98px) {
+		#trabajos1 .row a{
+			font-size: .95em;
+			padding: 4%;
+		}
+
+		#galeria2 .texto h2{
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		.row img{ 
+			width: 100%;
+			height: 320px;
+		}
+
+		#informacion .textoss{ 
+			font-size: 1em;
+			overflow: hidden;
+		}
+	}
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	header .logo{ 
+		margin: 0;
+		padding: 20px 20px;
+		font-size: 2.90em;
+	}
+
+	header a{ 
+		padding: 6px 100px;
+		margin-bottom: 5%;
+		font-size: 1.2em;
+	}
+
+	header a:hover{
+		background-color: #a7c232;
+		color: #014e1d;
+		cursor: pointer;
+	}
+
+	#trabajos1 h2{
+		margin: 0% 10% 0% 10%;
+		font-size: .85em;
+		text-align: center;
+	}
+
+	#trabajos1 .row a{
+		font-size: 1em;
+		padding: 4%;
+	}
+
+	#galeria .container{ 
+		padding-bottom: 10%;
+	}
+
+	#contacto h2{ 
+		font-size: 1.35em;
+	}
+	
+	#contacto .container p{ 
+		font-size: 1.3em;
+	}
+
+	#footer .cards{ 
+		font-size: 0.7em;
+	}
+	
+	#footer .card-body a{ 
+		font-size: 30px;
+	}
+	
+	a{
+		font-size: 1rem;
+	}
+
+	@media (max-width: 767.98px) {
+		#soy-tribi .container { 
+			padding-top: 5%;
+		}
+
+		#soy-tribi .container p{
+			font-size: 1.2em;
+			text-align: center;
+		}
+
+		#trabajos1 h2{
+			font-size: 2.1em;
+			text-align: center;
+		}
+
+		#galeria2 .texto h2{
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		.row img{ 
+			width: 100%;
+			height: 450px;
+		}
+
+		#informacion h5{
+			margin-bottom: 6%;
+			font-size: 1.5em;
+		}
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	header .logo{ 
+		padding-top: 7%;
+		font-size: 2.3em;
+	}
+
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0;
+		padding-right: 2px;
+		cursor: pointer;
+	}
+
+	header a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-between;
+		font-size: .9em;
+		flex-direction: row;
+		margin: 1%;
+		margin-bottom: 4%;
+	}
+
+	#soy-tribi .container { 
+		padding-top: 5%;
+	}
+
+	#soy-tribi .container p{
+		font-size: 1.3em;
+		text-align: center;
+	}
+
+	#trabajos1 h2{
+		font-size: 2.1em;
+		text-align: center;
+	}
+
+	#trabajos1 .row a{
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-around;
+		font-size: 1.3em;
+		padding: 3%;
+		border-radius: 0%;
+		padding: 0% 10%;
+	}
+
+	#galeria .container{ 
+		padding-bottom: 10%;
+	}
+
+	#galeria2 .texto h2{
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	.row img{ 
+		width: 100%;
+		height: 230px;
+	}
+
+	#informacion .card-text{ 
+		font-size: 1.1em;
+		overflow: hidden;
+	}
+	
+	#informacion .textoss{ 
+		font-size: .85em;
+		overflow: hidden;
+	}
+
+	#contacto h2{ 
+		font-size: 1.8em;
+	}
+
+	#footer .cards{ 
+		font-size: 0.7em;
+	}
+	
+	#footer .card-body a{ 
+		font-size: 30px;
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0;
+		padding-right: 2px;
+		cursor: pointer;
+	}
+
+	header a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.2em;
+		flex-direction: row;
+		margin: 0% 2%;
+		margin-bottom: 4%;
+		border-radius: 10%;
+	}
+
+	#caracteristicas ul{
+		font-size: 1.1em;
+	}
+
+	#soy-tribi .container h2{
+		font-size: 3em;
+	}
+
+	#soy-tribi .container p{
+		font-size: 1.8em;
+		font-weight: none;
+	}
+
+	#soy-tribi .container h3{
+		font-size: 1.8em;
+	}
+
+	#trabajos1 h2{
+		font-size: 2em;
+		text-align: center;
+	}
+
+	#trabajos1 .row a{
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-around;
+		font-size: 1.3em;
+		padding: 3%;
+		border-radius: 0%;
+	}
+
+	#galeria .container h2 { 
+		font-size: 2em;
+	}
+
+	#galeria .container{ 
+		padding-bottom: 10%;
+	}
+
+	.row img{ 
+		width: 100%;
+		height: 210px;
+	}
+
+	#ubicacion h2{
+		margin-top: 2%;
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+	header .logo{ 
+		font-size: 3.1em;
+	}
+
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0;
+		padding-right: 2px;
+		cursor: pointer;
+	}
+
+	header a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.2em;
+		flex-direction: row;
+		margin: 0% 2%;
+		margin-bottom: 4%;
+		border-radius: 10%;
+	}
+
+	header a:hover{
+		background-color: #a7c232;
+		color: #014e1d;
+		cursor: pointer;
+		padding: 0% 10%;
+	}
+
+	#caracteristicas ul{
+		width: 100%;
+		font-size: 1.1em;
+	}
+
+	#soy-tribi .container{ 
+		padding-top: 3%;
+	}
+
+	#soy-tribi .container h2{
+		font-size: 3em;
+	}
+
+	#soy-tribi .container p{
+		font-size: 1.8em;
+	}
+
+	#soy-tribi .container h3{
+		font-size: 1.8em;
+	}
+
+	#trabajos1 .row a{
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-around;
+		font-size: 1.3em;
+		padding: 3%;
+		border-radius: 0%;
+	}
+
+	#galeria .container h2{ 
+		font-size: 2em;
+	}
+
+	#galeria .container{ 
+		padding-bottom: 10%;
+	}
+
+	#galeria2 .texto h2{
+		font-size: 2em;
+		font-weight: bold;
+	}
+
+	#galeria2 .texto p{
+		font-size: 1.3em;
+	}
+
+	.row img{ 
+		width: 100%;
+		height: 210px;
+	}
+
+	#informacion h5{
+		margin-bottom: 5%;
+		font-size: 2em;
+	}
+
+	#ubicacion h2{
+		margin-top: 2%;
+		font-size: 1.5em;
+	}
+
+	@media (max-width: 1399.98px) {
+		.row img{
+			width: 100%;
+			height: 225px;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	header .logo{ 
+		font-size: 3.1em;
+	}
+
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0;
+		padding-right: 2px;
+	}
+
+	header a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.2em;
+		flex-direction: row;
+		margin: 0% 2%;
+		margin-bottom: 4%;
+		border-radius: 10%;
+		cursor: pointer;
+	}
+
+	header a:hover{
+		background-color: #c895f8;
+		color: #000000;
+		cursor: pointer;
+		padding: 0% 10%;
+	}
+
+	#caracteristicas p{
+		display: flex;
+		text-align: center;
+		font-size: 1.8em;
+	}
+
+	#caracteristicas ul{
+		width: 100%;
+		font-size: 1.3em;
+	}
+
+	#soy-tribi .container h2{
+		font-size: 3em;
+	}
+
+	#soy-tribi .container p{
+		font-size: 1.8em;
+	}
+
+	#soy-tribi .container h3{
+		font-size: 1.8em;
+	}
+
+	#trabajos1 .row a{
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-around;
+		font-size: 1.3em;
+		padding: 3%;
+		border-radius: 0%;
+	}
+
+	#galeria .container h2{ 
+		font-size: 2em;
+	}
+
+	#galeria .container{ 
+		padding-bottom: 10%;
+	}
+
+	#galeria2 .texto h2{
+		font-size: 2em;
+		font-weight: bold;
+	}
+
+	#galeria2 .texto p{
+		font-size: 1.3em;
+	}
+
+	.row img{ 
+		width: 100%;
+		height: 300px;
+	}
+
+	#informacion h5{
+		margin-bottom: 5%;
+		font-size: 2em;
+	}
+
+	#ubicacion h2{
+		margin-top: 2%;
+		font-size: 1.5em;
+	}
+} 
