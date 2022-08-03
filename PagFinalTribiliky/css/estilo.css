@@ -14,7 +14,7 @@ body {
 }
 
 /* comienza whatsapp */
-.float{
+.float {
 	position:fixed;
 	width:60px;
 	height:60px;
@@ -28,6 +28,7 @@ body {
 	box-shadow: 2px 2px 3px #999;
 	z-index:100;
 }
+
 .float:hover {
 	text-decoration: none;
 	color: #25d366;
@@ -68,6 +69,22 @@ li { font-size: 1.25em;}
 	max-width: 1400px;
 	margin: auto;
 }
+
+/*banner-responsive*/
+.banner-responsive {
+	overflow: hidden;
+	padding-bottom: 48.25%;
+	position: relative;
+}
+
+.banner-responsive img {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+/*fin banner-responsive*/
 
 header { 
 	background-color: rgb(255, 199, 209);
@@ -111,22 +128,6 @@ header a {
 header a:hover { 
 	color: dodgerblue;
 }
-
-/*banner-responsive*/
-.banner-responsive {
-	overflow: hidden;
-	padding-bottom: 48.25%;
-	position: relative;
-}
-
-.banner-responsive img {
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
-/*fin banner-responsive*/
 
 #caracteristicas {
 	display: flex;
@@ -198,12 +199,13 @@ header a:hover {
 
 #trabajos1 h2 {
 	margin: 0% 10% 0% 10%;
-	font-size: 2.5em;
+	font-size: 1em;
 	color: wheat;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: bold;
 	padding-top: 10%;
 	text-align: center;
+	overflow: hidden;
 }
 
 #trabajos1 .row {
@@ -521,6 +523,12 @@ header a:hover {
 	font-size: 1rem;
 	cursor: pointer;
 }
+
+button {
+	padding: 2% 6%;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
 /* fin del footer */
 
 
@@ -552,7 +560,7 @@ header a:hover {
 	
 	#caracteristicas p{
 		width: 100%;
-		font-size: 1.4em;
+		font-size: 1em;
 		padding-top: 15%;
 	}
 
@@ -587,7 +595,8 @@ header a:hover {
 	}
 
 	#trabajos1 h2{
-		font-size: .8em;
+		font-size: 1.3em;
+		justify-content: center;
 		text-align: center;
 	}
 	
@@ -655,7 +664,6 @@ header a:hover {
 }
 
 
-
 @media (min-width: 426px) and (max-width: 575.98px) {
 	#caracteristicas p{
 		width: 100%;
@@ -670,12 +678,13 @@ header a:hover {
 	
 	#soy-tribi .container p{
 		font-size: 1.1em;
+		color: #482c61;
 		text-align: center;
 		font-weight: none;
 	}
 
 	#trabajos1 h2{
-		font-size: 1em;
+		font-size: 1.1em;
 		text-align: center;
 	}
 
@@ -736,6 +745,12 @@ header a:hover {
 	}
 
 	@media (max-width: 575.98px) {
+		#trabajos1 h2{
+		font-size: 1.1em;
+		text-align: center;
+		overflow: hidden;
+	}
+
 		#trabajos1 .row a{
 			font-size: .95em;
 			padding: 4%;
@@ -748,7 +763,7 @@ header a:hover {
 
 		.row img{ 
 			width: 100%;
-			height: 320px;
+			height: 290px;
 		}
 
 		#informacion .textoss{ 
@@ -759,12 +774,11 @@ header a:hover {
 }
 
 
-
 @media (min-width: 576px) and (max-width: 767.98px) {
 	header .logo{ 
 		margin: 0;
 		padding: 20px 20px;
-		font-size: 2.90em;
+		font-size: 2.6em;
 	}
 
 	header a{ 
@@ -792,6 +806,11 @@ header a:hover {
 
 	#galeria .container{ 
 		padding-bottom: 10%;
+	}
+
+	.row img{ 
+		width: 100%;
+		height: 380px;
 	}
 
 	#contacto h2{ 
@@ -936,6 +955,11 @@ header a:hover {
 
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	header .logo{ 
+		padding-top: 6%;
+		font-size: 2.3em;
+	}
+	
 	header nav{
 		flex-direction: row;
 		padding-bottom: 0;
@@ -988,7 +1012,7 @@ header a:hover {
 		border-radius: 0%;
 	}
 
-	#galeria .container h2 { 
+	#galeria .container h2{ 
 		font-size: 2em;
 	}
 
@@ -998,7 +1022,12 @@ header a:hover {
 
 	.row img{ 
 		width: 100%;
-		height: 210px;
+		height: 200px;
+	}
+
+	#informacion h5{
+		margin-bottom: 6%;
+		font-size: 1.8em;
 	}
 
 	#ubicacion h2{
@@ -1008,7 +1037,8 @@ header a:hover {
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-	header .logo{ 
+	header .logo{
+		padding-top: 6%;
 		font-size: 3.1em;
 	}
 
@@ -1062,6 +1092,11 @@ header a:hover {
 		font-size: 1.8em;
 	}
 
+	#trabajos1 h2{
+		font-size: 2.2em;
+		overflow: hidden;
+	}
+
 	#trabajos1 .row a{
 		display: flex;
 		align-items: flex-end;
@@ -1113,6 +1148,7 @@ header a:hover {
 
 @media (min-width: 1400px) {
 	header .logo{ 
+		padding-top: 6%;
 		font-size: 3.1em;
 	}
 
@@ -1214,23 +1250,16 @@ header a:hover {
 		width: 100%;
 		height: 270px;
 	}
+
+	#trabajos1 h2{
+		font-size: 2.5em;
+		overflow: hidden;
+	}
 }
 
 @media (min-width: 1440px) {
 	header .logo{ 
 		font-size: 3.5em;
-	}
-
-	header a{
-		margin: 0% 5%;
-		margin-bottom: 4%;
-		border-radius: 10%;
-		cursor: pointer;
-		padding: 3%;
-		padding-left: 10%;
-		padding-right: 10%;
-		text-align: center;
-		font-size: 1em;
 	}
 
 	header a:hover{
@@ -1245,8 +1274,381 @@ header a:hover {
 		font-size: 1em;
 	}
 
+	#trabajos1 h2{
+		font-size: 2.5em;
+		overflow: hidden;
+	}
+
 	.row img{ 
 		width: 100%;
 		height: 255px;
 	}
 }
+
+@media (min-width: 1441px) and (max-width: 1824px) {
+	header a{
+		text-align: center;
+		font-size: 1.3em;
+	}
+
+	#informacion h5{
+		margin-bottom: 5%;
+		font-size: 4em;
+	}
+
+	#informacion .card-text{ 
+		font-size: 2.5em;
+		color: #482c61;
+		overflow: hidden;
+	}
+	
+	#informacion .textoss{ 
+		font-size: 1.8em;
+		overflow: hidden;
+	}
+
+	#ubicacion {
+		width: 100%;
+		height: 999px;
+		margin: 0; 
+		max-width: 2560px;
+		padding: 10%;
+	}
+
+	#ubicacion h2 { 
+		font-size: 3em;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	#ubicacion .container p{ 
+		color: white;
+		font-size: 2.5em;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+
+	#contacto h2{ 
+		font-size: 3.5em;
+	}
+	
+	#contacto .container p{ 
+		font-size: 3em;
+	}
+
+	#footer .cards h5{ 
+		font-size: 1.2em;
+	}
+
+	#footer .cards{ 
+		width: 100%;
+		color: white;
+		font-size: 1.4em;
+		padding: 2%;
+		margin-bottom: 2%;
+	}
+	
+	#footer .card-body a{ 
+		font-size: 60px;
+	}
+
+	#footer a{ 
+		padding: 3% 9%;
+		font-size: 1.7rem;
+		cursor: pointer;
+	}
+
+	@media (max-width: 1824px){
+		header .logo{ 
+			padding-top: 8%;
+			font-size: 4em;
+		}
+
+		header a{
+			text-align: center;
+			font-size: 1.8em;
+		}
+
+		#caracteristicas p{
+			display: flex;
+			text-align: center;
+			font-size: 3em;
+		}
+	
+		#caracteristicas ul{
+			width: 100%;
+			font-size: 2.5em;
+		}
+
+		#soy-tribi{
+			width: 100%;
+			max-width: 2560px;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			overflow: hidden;
+		}
+		
+		#soy-tribi .container h2{
+			font-size: 3em;
+		}
+	
+		#soy-tribi .container p{
+			font-size: 2.5em;
+		}
+	
+		#soy-tribi .container h3{
+			font-size: 2.5em;
+		}
+
+		#trabajos1{
+			width: 100%;
+			max-width: 2560px;
+			margin: 0;
+			padding: 2%;
+		}
+	
+		#trabajos1 h2{
+			font-size: 3.5em;
+			justify-content: center;
+			text-align: center;
+		}
+		
+		#trabajos1 .row .texto-img h3{
+			font-size: 2em;
+			text-align: center;
+			font-weight: bold;
+			color: black;
+		}
+		
+		#trabajos1 .row a{
+			margin-top: 10%;
+			font-size: 2em;
+			padding: 4%;
+			border: 2px solid;
+		}
+
+		#galeria .container h2{ 
+			font-size: 2.5em;
+		}
+	
+		#galeria .container{ 
+			padding-bottom: 8%;
+		}
+	
+		#galeria2 .texto h2{
+			font-size: 2.5em;
+			font-weight: bold;
+		}
+	
+		#galeria2 .texto p{
+			font-size: 2em;
+		}
+	
+		.row img{ 
+			width: 100%;
+			height: 320px;
+		}
+	}
+}
+
+
+@media (min-width: 1825px) and (max-width: 2560px) {
+	.container{ 
+		max-width: 2560px;
+		margin: auto;
+	}
+
+	header .logo{ 
+		padding-top: 8%;
+		font-size: 5em;
+		padding-bottom: 3%;
+	}
+
+	header a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.9em;
+		flex-direction: row;
+		margin: 0% 2%;
+		margin-bottom: 4%;
+		border-radius: 10%;
+		cursor: pointer;
+	}
+
+	header a:hover{
+		background-color: #d1a42a;
+		color: #000000;
+		cursor: pointer;
+		padding: 0% 8%;
+	}
+
+	#caracteristicas p{
+		display: flex;
+		text-align: center;
+		font-size: 3em;
+	}
+
+	#caracteristicas ul{
+		width: 100%;
+		font-size: 1.9em;
+	}
+
+	#soy-tribi .container h2{
+		text-align: center;
+		font-size: 3.3em;
+	}
+
+	#soy-tribi .container p{
+		text-align: center;
+		font-size: 2.5em;
+	}
+
+	#soy-tribi .container h3{
+		text-align: center;
+		font-size: 2.5em;
+	}
+
+	#trabajos1{
+		width: 100%;
+		max-width: 2560px;
+		margin: 0;
+		padding: 2%;
+	}
+
+	#trabajos1 h2{
+		overflow: hidden;
+		font-size: 5em;
+		color: #482c61;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	#trabajos1 .row .texto-img h3{
+		font-size: 2em;
+		text-align: center;
+		font-weight: bold;
+		color: black;
+	}
+	
+	#trabajos1 .row a{
+		margin-top: 10%;
+		font-size: 2em;
+		padding: 4%;
+		border: 2px solid;
+	}
+
+	#galeria .container h2{ 
+		font-size: 3.5em;
+	}
+
+	#galeria .container{ 
+		padding-bottom: 8%;
+	}
+
+	#galeria2 .texto h2{
+		font-size: 4em;
+		font-weight: bold;
+	}
+
+	#galeria2 .texto p{
+		font-size: 2.5em;
+	}
+
+	.row img{ 
+		width: 100%;
+		height: 355px;
+	}
+
+	#informacion h5{
+		margin-bottom: 5%;
+		font-size: 4em;
+	}
+
+	#informacion .card-text{ 
+		font-size: 2.5em;
+		overflow: hidden;
+	}
+	
+	#informacion .textoss{ 
+		font-size: 1.8em;
+		overflow: hidden;
+	}
+	
+	#ubicacion h2{ 
+		font-size: 3em;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	#ubicacion .container p{ 
+		color: white;
+		font-size: 2.5em;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+
+	#contacto h2{ 
+		font-size: 3.5em;
+	}
+	
+	#contacto .container p{ 
+		font-size: 3em;
+	}
+
+	#footer .cards h5{ 
+		font-size: 1.4em;
+	}
+
+	#footer .cards{ 
+		width: 100%;
+		color: white;
+		font-size: 1.7em;
+		padding: 2%;
+		margin-bottom: 2%;
+	}
+	
+	#footer .card-body a{ 
+		font-size: 80px;
+	}
+
+	#footer a { 
+		padding: 3% 9%;
+		font-size: 2rem;
+		cursor: pointer;
+	}
+
+	@media (max-width: 2560px) {
+		header a{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2em;
+			flex-direction: row;
+			margin: 0% 2%;
+			margin-bottom: 4%;
+			border-radius: 10%;
+			cursor: pointer;
+		}
+		
+		#trabajos1 h2{
+			overflow: hidden;
+			font-size: 4.5em;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.row img{ 
+			width: 100%;
+			height: 400px;
+		}
+	}
+}
+
+/*-------------------- final @media --------------------------*/
